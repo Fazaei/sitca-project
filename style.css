@@ -1,22 +1,22 @@
 @font-face{
     font-family: 'poppins';
-    src: url(./src/assets/fonts/Poppins-Bold.ttf);
+    src: url(./src/assets/Landing/fonts/Poppins-Bold.ttf);
 }
 @font-face{
     font-family: 'inter';
-    src: url(./src/assets/fonts/Inter_28pt-Light.ttf);
+    src: url(./src/assets/Landing/fonts/Inter_28pt-Light.ttf);
 }
 @font-face{
   font-family: 'space';
-  src: url(./src/assets/fonts/SpaceGrotesk-Regular.ttf);
+  src: url(./src/assets/Landing/fonts/SpaceGrotesk-Regular.ttf);
 }
 @font-face{
   font-family: 'satoshi';
-  src: url(./src/assets/fonts/Satoshi-Regular.otf);
+  src: url(./src/assets/Landing/fonts/Satoshi-Regular.otf);
 }
 @font-face{
   font-family: 'actor';
-  src: url(./src/assets/fonts/Actor-Regular.ttf);
+  src: url(./src/assets/Landing/fonts/Actor-Regular.ttf);
 }
 
 body{
@@ -136,7 +136,7 @@ body{
 
   .banner {
     border-radius: 26px;
-    background-image: url('./src/assets/images/banner.png');
+    background-image: url('./src/assets/Landing/images/banner.png');
   }
 
   /* Static Border */
