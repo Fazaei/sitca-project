@@ -1,0 +1,79 @@
+{
+    "people": [
+        {
+            "name": "Mohsen Taghavi",
+            "profilePicture": "https://....",
+            "title": " Developer",
+            "skill": "Backend"
+        },
+        {
+            "name": "Amirreza Khatiri",
+            "profilePicture": "https://....",
+            "title": "Developer",
+            "skill": "Frontend"
+        },
+        {
+            "name": "Mahyar Mollaei",
+            "profilePicture": "https://....",
+            "title": "Developer",
+            "skill": "Frontend"
+        },
+        {
+            "name": "Amirhossein NikAeen",
+            "profilePicture": "https://....",
+            "title": "Designer",
+            "skill": "UI/UX"
+        },
+        {
+            "name": "Adolf Hitler",
+            "profilePicture": "https://....",
+            "title": "Baker",
+            "skill": "KIND"
+        },
+        {
+            "name": "Charles D. B. King",
+            "profilePicture": "https://....",
+            "title": "President",
+            "skill": "POPULAR"
+        }
+    ],
+    "skills": {
+        "design": [
+            {
+                "name": "Figma",
+                "value": 100
+            },
+            {
+                "name": "Adobe XD",
+                "value": 22
+            },
+            {
+                "name": "Folan ",
+                "value": 65
+            },
+            {
+                "name": "Folan 2",
+                "value": 21
+            }
+        ],
+        "development": [
+            {
+                "name": "HTML",
+                "value": 100
+            },
+            {
+                "name": "CSS",
+                "value": 54
+            },
+            {
+                "name": "JS",
+                "value": 21
+            }
+            ,
+            {
+                "name": "React",
+                "value": 73
+            }
+        ]
+    }
+}

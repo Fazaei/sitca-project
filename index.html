@@ -1,13 +1,198 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <title>Sitca</title>
+</head>
+
+<body class="bg-black">
+
+  <div id="header" class="w-10/12 m-auto mt-12 flex justify-between items-end">
+    <div
+      class="md:text-6xl md:to-50% text-4xl bg-gradient-to-r from-blue-700 from-10% to-purple-700 to-30% w-56 text-transparent bg-clip-text">
+      SITCA</div>
+    <div
+      class="md:flex text-2xl  w-48 h-14 text-white hidden items-center justify-center rounded-lg tracking-widest bg-gradient-to-r from-blue-700 to-purple-700">
+      Contact Us</div>
+  </div>
+
+  <div id="content" class="w-10/12 m-auto">
+
+    <div id="content-one"
+      class="flex flex-col-reverse items-center justify-between lg:flex-row lg:items-start mt-28 w-full">
+      <div class="lg:text-5xl text-2xl tracking-wider lg:w-2/3 lg:mt-0 -mt-44" data-aos="fade-right" data-aos-duration="900">
+        <div class="text-3xl">Hi &#x1F44B;</div>
+        <div id="hi" class="mt-6 text-3xl typed">we are</div>
+        <div class="mt-6"><span class="text-blue-700">SITCA</span> Develope Team</div>
+        <div id="text" style="font-family: 'inter';" class="lg:w-5/6 text-xl mt-6 text-justify w-full"></div>
+      </div>
+      <div class="lg:w-2/3 w-full" data-aos="fade-left" data-aos-duration="900">
+        <!-- <div style="background-image: url(./images/logo-bg.png);background-repeat: no-repeat;height: 540px; width: 600px; display: flex; align-items: center; justify-content: center;">
+              <img style="position: relative;left: -15px;" width="405px" height="350px" src="./images/logo.png" alt="">
+            </div> -->
+        <div id="logo-bg" style="background-image: url(./src/assets/Landing/images/logo-bg.png); width: 560px; height: 520px;"
+          class="bg-no-repeat bg-center relative m-auto md:left-0 lg:-top-14 -top-20 lg:left-14 -left-28 lg:scale-100 md:scale-100 scale-70">
+          <img class="relative left-11 top-16" width="411px" height="350px" src="./src/assets/Landing/images/logo.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="content-two" class="w-full m-auto mt-40">
+
+      <div class="text-center text-4xl tracking-wider">Our <span
+          class="tracking-wider bg-gradient-to-br from-blue-700 from-10% to-purple-700 to-100%0% w-56 text-transparent bg-clip-text">
+          Team</span></div>
+      <div id="team" class="w-full flex justify-around flex-wrap mt-8">
+
+        <!-- * Codes are added by React * -->
+
+      </div>
+
+    </div>
+
+
+    <div id="content-three" class="w-full m-auto mt-40">
+
+      <div class="text-center text-4xl tracking-widest">Our <span class="tracking-widest bg-gradient-to-br from-blue-700 from-10% to-purple-700 to-100%0% w-56 text-transparent bg-clip-text">Skills</span></div>
+      <div id="" class="w-full mt-8 flex justify-between" data-aos="slide-up" data-aos-duration="1200">
+        <div id="delevopers" class="skill box-border relative flex items-center flex-col mt-10">
+
+
+          <div class="w-10/12 mt-11 tracking-wider">
+
+
+            <div class="flex w-5/12 items-center relative lg:right-0 right-4">
+              <img class="md:scale-100 scale-50" src="./src/assets/Landing/images/code.png" alt="">
+              <span class="relative lg:left-2 -left-2 lg:text-xl text-sm">Developers</span>
+            </div>
+
+
+            <div id="developerSkills" class="w-full -mt-2">
+
+
+              <!-- * Codes are added by React * -->
+
+
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <div id="designers" class="skill box-border relative flex items-center flex-col mt-10">
+
+          <div class="w-10/12 mt-11 tracking-wider">
+
+
+            <div class="flex w-5/12 items-center relative lg:right-0 right-4">
+              <img class="md:scale-100 scale-50" src="./src/assets/Landing/images/design.png" alt="">
+              <span class="relative lg:left-2 -left-2 lg:text-xl text-sm">Designers</span>
+            </div>
+
+
+            <div id="designerSkills" class="w-full -mt-2">
+
+
+              <!-- * Codes are added by React * -->
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+    <div id="content-four" class="w-full m-auto mt-40 lg:block hidden">
+
+        <div class="banner bg-no-repeat bg-cover h-44 w-full box-border relative flex justify-center items-center flex-col mt-10">
+            <div class="w-10/12 h-20 flex justify-between items-center">
+              <div class="flex justify-between items-center">
+                <div><img src="./src/assets/Landing/images/paperplane.png" alt=""></div>
+                <div class="h-20 flex flex-col justify-between relative left-4">
+                  <p style="font-family: 'space';" class="text-3xl font-bold">Have any project idea?</p>
+                  <p style="font-family: 'actor';color: #E6E6E682;" class="text-sm w-64">If you have a project idea, contact us and present your idea</p>
+                </div>
+              </div>
+
+
+              <div style="font-family: 'satoshi';" class="flex items-center justify-center text-sm w-52 h-10 rounded-full bg-gradient-to-r from-blue-700 from-10% to-purple-700 to-80%">
+                Contact Now
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+
+  </div>
+
+  <div id="footer" class="lg:w-10/12 md:w-10/12 w-full m-auto lg:mt-48 mt-24">
+
+    <div class="text-center text-lg">Contact <span class="tracking-wider bg-gradient-to-br from-blue-700 from-10% to-purple-700 to-100%0% w-56 text-transparent bg-clip-text">Us</span></div>
+
+    <div class="flex text-lg justify-between  font-sans tracking-widest pt-7 lg:w-535 w-full m-auto">
+
+
+
+      <div class="flex flex-col justify-center items-center lg:scale-100 scale-75">
+        <div class="bg-[url('./src/assets/Landing/images/socials-bg.png')] bg-center bg-no-repeat w-24 h-20 flex justify-center items-center"><img src="./src/assets/Landing/images/github.png" alt=""></div>
+        <p class="relative top-1">Github</p>
+      </div>
+      <div class="flex flex-col justify-center items-center lg:scale-100 scale-75">
+        <div class="bg-[url('./src/assets/Landing/images/socials-bg.png')] bg-center bg-no-repeat w-24 h-20 flex justify-center items-center"><img src="./src/assets/Landing/images/Instagram.png" alt=""></div>
+        <p class="relative top-1">Instagram</p>
+      </div>
+      <div class="flex flex-col justify-center items-center lg:scale-100 scale-75">
+        <div class="bg-[url('./src/assets/Landing/images/socials-bg.png')] bg-center bg-no-repeat w-24 h-20 flex justify-center items-center"><img src="./src/assets/Landing/images/email.png" alt=""></div>
+        <p class="relative top-1">Email</p>
+      </div>
+      <div class="flex flex-col justify-center items-center lg:scale-100 scale-75">
+        <div class="bg-[url('./src/assets/Landing/images/socials-bg.png')] bg-center bg-no-repeat w-24 h-20 flex justify-center items-center"><img src="./src/assets/Landing/images/telp.png" alt=""></div>
+        <p class="relative top-1">Telp</p>
+      </div>
+
+
+    </div>
+    
+  </div>
+
+  <div id="footer-bottom" class="mt-20 lg:text-sm text-2xs lg:tracking-wider">
+    <hr>
+    <div class="p-10 text-center">Powered By Sampad IT & Computer Association(SITCA)</div>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function () {
+       AOS.init();
+        var options = { 
+          strings: ["Welcome to our journey of innovation and growth. Here, we showcase our passion, skills, and achievements, reflecting the hard work and dedication we've put into our projects. Explore our work and see how we transform ideas into reality, one project at a time"], 
+          typeSpeed: 20, 
+          backSpeed: 25, 
+          loop: false,
+          showCursor: false,
+        };
+        var typed = new Typed('#text', options);
+      }); 
+  </script>
+</body>
+
 </html>

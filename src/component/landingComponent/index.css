@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes expandWidth 
+  { 
+    from { width: 25%; } to { width: var(--width);  } 
+  }
+
+  .animationProgress{
+    animation: expandWidth 2s ease-in-out forwards;
+  }
