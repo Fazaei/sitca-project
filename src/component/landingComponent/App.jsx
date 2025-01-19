@@ -9,7 +9,7 @@ function App() {
         data.people.map((person,index)=>(
 
           <div data-aos="fade-up" data-aos-duration="900">
-            <div key={index} className="students box-border relative flex items-center flex-col justify-around mt-10">
+            <div key={index} className="m-auto students box-border relative flex items-center flex-col justify-around mt-10">
             
             <div className="imgs mt-3"><img src="./src/assets/Landing/images/nik.png" alt=""/></div>
             <div className="names text-xl tracking-wider">{person.name}</div>

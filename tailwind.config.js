@@ -17,6 +17,9 @@ export default {
       },
       fontSize:{
         '2xs':'10px'
+      },
+      screens:{
+        '3xl':'1600px'
       }
     },
   },

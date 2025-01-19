@@ -20,10 +20,10 @@
       Contact Us</div>
   </div>
 
-  <div id="content" class="w-10/12 m-auto">
+  <div id="content" class="lg:w-10/12 md:w:10/12 w-full m-auto">
 
     <div id="content-one"
-      class="flex flex-col-reverse items-center justify-between lg:flex-row lg:items-start mt-28 w-full">
+      class="flex flex-col-reverse items-center justify-between lg:flex-row lg:items-start mt-28 lg:w-full md:w-full w-10/12 m-auto">
       <div class="lg:text-5xl text-2xl tracking-wider lg:w-2/3 lg:mt-0 -mt-44" data-aos="fade-right" data-aos-duration="900">
         <div class="text-3xl">Hi &#x1F44B;</div>
         <div id="hi" class="mt-6 text-3xl typed">we are</div>
@@ -46,7 +46,7 @@
       <div class="text-center text-4xl tracking-wider">Our <span
           class="tracking-wider bg-gradient-to-br from-blue-700 from-10% to-purple-700 to-100%0% w-56 text-transparent bg-clip-text">
           Team</span></div>
-      <div id="team" class="w-full flex justify-around flex-wrap mt-8">
+      <div id="team" class="3xl:w-10/12 w-full m-auto flex justify-around flex-wrap mt-8">
 
         <!-- * Codes are added by React * -->
 
@@ -55,7 +55,7 @@
     </div>
 
 
-    <div id="content-three" class="w-full m-auto mt-40">
+    <div id="content-three" class="lg:w-full md:w-full w-10/12 m-auto mt-40">
 
       <div class="text-center text-4xl tracking-widest">Our <span class="tracking-widest bg-gradient-to-br from-blue-700 from-10% to-purple-700 to-100%0% w-56 text-transparent bg-clip-text">Skills</span></div>
       <div id="" class="w-full mt-8 flex justify-between" data-aos="slide-up" data-aos-duration="1200">
@@ -180,7 +180,7 @@
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/in-view/0.6.1/in-view.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
        AOS.init();
@@ -193,19 +193,19 @@
         };
         var typed = new Typed('#text', options);
 
-
         let observer = new IntersectionObserver(entries=>{
           entries.forEach(entry=>{
             if(entry.isIntersecting){
               document.querySelectorAll('.skills-animation').forEach(e=>{
-                e.style.width = "100%"
+                e.style.width = "100%";
               })
             }
           })
         },{threshold: 0.5})
 
-        observer.observe(document.getElementById("progress"))
-      }); 
+        observer.observe(document.getElementById("developerSkills"))
+      });
+      
   </script>
 </body>
 
