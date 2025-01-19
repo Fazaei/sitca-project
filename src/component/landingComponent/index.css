@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes animation {
-  0% {
-    width: 0%;
-  }
-  10% {
-    width: 10%;
-  }
-  20% {
-    width: 20%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-  .animationProgress{
-    width: 100%;
-    animation: animation 2s;
+  .skills-animation{
+    transition: width 2s;
   }

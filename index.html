@@ -180,8 +180,9 @@
   <script type="module" src="/src/main.jsx"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/in-view/0.6.1/in-view.min.js"></script>
   <script>
-     document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
        AOS.init();
         var options = { 
           strings: ["Welcome to our journey of innovation and growth. Here, we showcase our passion, skills, and achievements, reflecting the hard work and dedication we've put into our projects. Explore our work and see how we transform ideas into reality, one project at a time"], 
@@ -191,6 +192,19 @@
           showCursor: false,
         };
         var typed = new Typed('#text', options);
+
+
+        let observer = new IntersectionObserver(entries=>{
+          entries.forEach(entry=>{
+            if(entry.isIntersecting){
+              document.querySelectorAll('.skills-animation').forEach(e=>{
+                e.style.width = "100%"
+              })
+            }
+          })
+        },{threshold: 0.5})
+
+        observer.observe(document.getElementById("progress"))
       }); 
   </script>
 </body>
