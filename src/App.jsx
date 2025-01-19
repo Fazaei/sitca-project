@@ -17,8 +17,8 @@ function App() {
         },
         {
           path:'profile',
-          element:<Profile/>
-        },  
+          element:<Profile prop={value}/>
+        }
       ]
     }
   ])
@@ -27,7 +27,7 @@ function App() {
     <>
       <RouterProvider router={myRouter}/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
